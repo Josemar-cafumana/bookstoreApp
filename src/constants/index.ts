@@ -42,6 +42,25 @@ export const manufacturers = [
   "Volvo",
 ];
 
+export const genres = [
+  {
+    value: "fiction",
+    label: "Fiçção",
+  },
+  {
+    value: "fantasy",
+    label: "Fantasia",
+  },
+  {
+    value: "science",
+    label: "Science fiction",
+  },
+  {
+    value: "children",
+    label: "Teen",
+  },
+];
+
 export const footerLinks = [
   {
     title: "Sobre Nós",

@@ -40,7 +40,7 @@ const Hero = () => {
           },
         }}
         slidesPerView={3}
-        className="flex gap-4 justify-center  mt-12"
+        className="flex gap-6 justify-center  mt-12"
       >
         {data?.docs.map((book) => (
           <SwiperSlide className="mt-12" key={book.key}>

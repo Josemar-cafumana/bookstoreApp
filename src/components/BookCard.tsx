@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import { Button } from "@components/ui/button";
 
 interface currentBook {
   book: BookDoc;
@@ -52,12 +53,7 @@ const BookCard = ({ book }: currentBook) => {
           {book.subject_facet.slice(1, 8).concat("")}
         </p>
 
-        <button
-          onClick={onClickCart}
-          className="bg-primary hover:bg-primary/80 mt-4 py-2 px-4 w-full rounded-md text-white font-medium"
-        >
-          Adicionar ao carrinho
-        </button>
+        <Button onClick={onClickCart}>Adicionar ao carrinho</Button>
       </div>
     </div>
   );

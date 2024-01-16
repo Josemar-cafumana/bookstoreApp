@@ -11,6 +11,7 @@ import SearchCombo from "@components/SearchCombo";
 import { NavLink, useNavigate } from "react-router-dom";
 import BookDetailsModal from "@components/BookDetailsModal";
 import SkeletonLoader from "@components/SkeletonLoader";
+import { Button } from "@/components/ui/button";
 
 function Home() {
   const [queries, setqueries] = useState("world");
@@ -96,12 +97,13 @@ function Home() {
             para orientar e eventos que celebram a comunidade literária.
           </p>
 
-          <button
+          <Button
             onClick={() => navigator("/about")}
-            className="bg-primary hover:bg-primary/80 mt-4 py-2 px-4  rounded-md text-white font-medium"
+            size="sm"
+            className=" mt-4 "
           >
             Saber mais
-          </button>
+          </Button>
         </div>
       </div>
       {/* aboutUs section */}
@@ -148,12 +150,13 @@ function Home() {
             ))}
           </div>
           <div className="flex justify-center">
-            <button
+            <Button
               onClick={() => navigator("/search")}
-              className="bg-primary hover:bg-primary/80 mt-4 py-2 px-4 rounded-md text-white font-medium"
+              className="mt-4"
+              size="sm"
             >
               Ver todos
-            </button>
+            </Button>
           </div>
         </div>
       )}
